@@ -2,3 +2,15 @@
 .container-wrapper {
   padding: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .container-wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-wrapper {
+    padding: 0 110px;
+  }
+}

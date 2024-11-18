@@ -1,3 +1,6 @@
+.catalog-container {
+  padding-top: 27px;
+}
 
 .catalog-container__title {
   font-family: $secondary-font;
@@ -5,4 +8,18 @@
   line-height: 36px;
   color: #000000;
   text-align: left;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-container__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
+
+  .catalog-container {
+    padding-top: 65px;
+  }
 }

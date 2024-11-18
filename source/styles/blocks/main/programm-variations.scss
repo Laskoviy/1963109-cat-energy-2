@@ -1,11 +1,29 @@
+.programm-variations {
+  margin-bottom: 20px;
+}
+
+.programm-variations__wrapper {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.programm-variations__list {
+  width: 280px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
 .programm-variations__item {
   background-color: $bg-basic_gray;
   padding: 30px 33px 18px 20px;
+  position: relative;
 }
 
 .programm-variations__item::before {
   content: "";
   display: block;
+  position: absolute;
 }
 
 .programm-variations__item--slim::before {
@@ -30,10 +48,13 @@
   font-weight: 400;
   margin: 0;
   margin-left: 91px;
+  margin-bottom: 29px;
 }
 
 .programm-variations__description {
   text-align: left;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .programm-variations__link {
@@ -44,6 +65,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  position: relative;
 }
 
 .programm-variations__link::after {
@@ -57,9 +79,25 @@
   mask-size: 24px 12px;
   mask-repeat: no-repeat;
   display: block;
+  position: absolute;
+  top: 7px;
+  left: 100px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .programm-variations__list {
+    gap: 30px;
+    width: 708px;
+  }
+
+  // .programm-variations__item {
+
+  // }
+
+  .programm-variations__item::before {
+    left: 450px;
+  }
+
   .programm-variations__item--slim::before {
     width: 200px;
     height: 211px;
@@ -68,10 +106,38 @@
   .programm-variations__item--gain::before {
     width: 268px;
     height: 200px;
+    left: 420px;
+  }
+
+  .programm-variations__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .programm-variations__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+  }
+
+  .programm-variations__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
+  .programm-variations__list {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .programm-variations__item {
+    width: 570px;
+  }
+
   .programm-variations__item--slim::before {
     width: 100px;
     height: 106px;

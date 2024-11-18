@@ -1,6 +1,8 @@
-// .main-nav{
-
-// }
+.main-nav {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+  width: 100%;
+}
 
 .main-nav__toggle {
   background-color: #ffffff;
@@ -10,6 +12,9 @@
   width: 24px;
   height: 24px;
   background-image: url("../../icons/stack.svg#burger");
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .main-nav__toggle--close {
@@ -17,5 +22,23 @@
 }
 
 // .main-nav__list {
-
+//   display: flex;
+//   flex-direction: column;
 // }
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    width: unset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: unset;
+  }
+}
