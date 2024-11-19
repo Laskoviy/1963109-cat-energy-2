@@ -1,22 +1,19 @@
 .main-footer {
   background-color: $bg-basic_gray;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px 30px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding: 66px 110px;
   }
 }
 

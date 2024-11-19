@@ -1,8 +1,19 @@
+.products__wrapper {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
+
 .products__list {
   display: flex;
   flex-flow: column wrap;
   width: fit-content;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;

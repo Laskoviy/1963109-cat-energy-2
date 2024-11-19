@@ -4,13 +4,16 @@
 
 .example__wrapper {
   padding-top: 25px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 1220px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -23,11 +26,13 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  width: 195px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 60px;
+    width: 325px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +45,7 @@
 .example__description {
   margin: 0 auto;
   margin-bottom: 20px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
