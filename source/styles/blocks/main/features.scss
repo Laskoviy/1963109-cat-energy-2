@@ -1,10 +1,19 @@
 .features {
-  margin-bottom: 49px;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .features__wrapper {
   margin: 0 auto;
   width: fit-content;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+  }
 }
 
 .features__title {
@@ -20,11 +29,33 @@
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 37px 153px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: unset;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }
 
 .features__item {
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 31px;
+    min-width: 230px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
 }
 
 .features__item::before {
@@ -35,6 +66,11 @@
   background-color: $bg-basic_green;
   background-position: 50%;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .features__item--natural::before {
@@ -64,27 +100,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__list {
-    flex-direction: row;
-    gap: 37px 153px;
-    width: 708px;
-  }
-
-  .features__item {
-    flex-direction: column;
-    justify-content: center;
-    gap: 31px;
-    min-width: 230px;
-    min-height: 300px;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-  }
-
-  .features__item::before {
-    width: 80px;
-    height: 80px;
-  }
-
   .features__item--natural {
     background-image: url("../../icons/stack.svg#natural-background");
     background-size: 112px 280px;
@@ -110,28 +125,4 @@
     line-height: 60px;
     margin-bottom: 32px;
   }
-}
-
-@media (min-width: $desktop-width) {
-  .features__list {
-    gap: unset;
-    justify-content: space-between;
-    width: 1220px;
-  }
-
-  // .features__item--natural {
-
-  // }
-
-  // .features__item--powder {
-
-  // }
-
-  // .features__item--eating {
-
-  // }
-
-  // .features__item--change {
-
-  // }
 }

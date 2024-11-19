@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  margin-bottom: 20px;
 }
 
 .hero__wrapper {
@@ -14,6 +13,18 @@
   min-height: 302px;
   color: $additional-color-text;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    color: $desktop-color-text;
+    background-image: none;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+  }
 }
 
 .hero__title {
@@ -25,6 +36,14 @@
   width: 249px;
   margin: 0 auto;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 204px 40px 90;
+  }
 }
 
 .hero__slogan {
@@ -33,66 +52,46 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0 335px 50px 90px;
+    width: 283px;
+  }
 }
 
 .hero__image {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .hero__button-wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    position: absolute;
+    top: 350px;
+    left: 90px;
+    width: 244px;
+  }
 }
 
 .hero__choose-pr {
   display: block;
   padding: 10px 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .hero {
-    margin-bottom: 0;
-  }
-
-  .hero__wrapper {
-    color: $desktop-color-text;
-    background-image: none;
-    background-color: #ffffff;
-    margin-bottom: 0;
-    padding: 0;
-  }
-
-  .hero__title {
-    width: 414px;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    margin: 0 204px 40px 90;
-  }
-
-  .hero__slogan {
-    font-size: 20px;
-    margin: 0 335px 50px 90px;
-    width: 283px;
-  }
-
-  .hero__image {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .hero__choose-pr {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-  }
-
-  .hero__button-wrapper {
-    padding: 0;
-    position: absolute;
-    top: 280px;
-    left: 90px;
-    width: 244px;
+    padding: 14px 26px;
   }
 }
+
