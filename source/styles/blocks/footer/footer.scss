@@ -1,19 +1,26 @@
 .main-footer {
   background-color: $bg-basic_gray;
-  padding: 40px 20px;
+}
+
+.main-footer .container-wrapper {
+  width: 100%;
+}
+
+.main-footer__wrapper {
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 40px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 55px 0;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    padding: 66px 0;
   }
 }
 

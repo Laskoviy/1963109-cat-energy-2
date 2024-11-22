@@ -37,11 +37,7 @@
 
 .additional-products__list {
   margin-bottom: 35px;
-  width: 280px;
-
-  @media (min-width: $desktop-width) {
-    width: 896px;
-  }
+  width: 100%;
 }
 
 .additional-products__item {
@@ -62,7 +58,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    width: 894px;
+    width: 100%;
   }
 }
 
@@ -106,7 +102,7 @@
 }
 
 .additional-products__gift {
-  width: 280px;
+  width: 100%;
   min-height: 290px;
   color: $additional-color-text;
   background-color: $bg-basic_green;
