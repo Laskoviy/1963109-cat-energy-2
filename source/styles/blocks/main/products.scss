@@ -73,9 +73,9 @@
 .products__item--more {
   grid-template-columns: unset;
   grid-template-rows: unset;
-  grid-template-areas: "desc"
-  "btn";
-  //grid-template-rows: 44px 40px;
+  grid-template-areas:
+    "desc"
+    "btn";
   background-image: url("../../icons/stack.svg#plus");
   background-position: 132px 50px;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@
   }
 }
 
-.products__item--more .products__text{
+.products__item--more .products__text {
   margin-top: 53px;
   grid-area: desc;
   //grid-column: 1/2;
@@ -96,12 +96,12 @@
   }
 }
 
-.products__item--more .products__title{
+.products__item--more .products__title {
   margin: 0 auto;
   width: 204px;
 }
 
-.products__item--more .products__button{
+.products__item--more .products__button {
   //grid-row: 2/3;
   grid-area: btn;
 }
