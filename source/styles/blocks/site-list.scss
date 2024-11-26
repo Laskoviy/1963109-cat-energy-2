@@ -24,7 +24,7 @@
 
 .site-list__item {
   padding: 22px 44px;
-  border-bottom: 1px solid rgb(230, 230, 230);
+  border: 1px solid #ebebeb;
   min-width: fit-content;
 
   @media (min-width: $tablet-width) {
@@ -36,4 +36,12 @@
 .site-list__link {
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.site-list--catalog .site-list__item .site-list__link {
+  color: #000000;
 }

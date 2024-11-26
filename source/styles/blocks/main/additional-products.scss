@@ -46,17 +46,26 @@
   padding-bottom: 18px;
   border-top: 1px solid rgb(205, 205, 205);
   border-bottom: 1px solid rgb(205, 205, 205);
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "desc  price"
+    "btn   btn";
+
 
   @media (min-width: $tablet-width) {
     padding: 26px 40px 28px;
-    width: fit-content;
     border: 1px solid rgb(205, 205, 205);
+    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+      "title desc price"
+      "btn   btn  btn";
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    grid-template-areas: unset;
+    grid-template-columns: 161px 131px 42px 244px;
     padding: 15px 0;
     width: 100%;
   }
@@ -70,34 +79,56 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 13px;
+  grid-area: title;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: unset;
+    margin: 0;
   }
 }
 
 .additional-products__description {
   text-align: left;
   margin-bottom: 15px;
+  grid-area: desc;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: unset;
+  }
 }
 
 .additional-products__price {
   text-align: right;
+  grid-area: price;
+
+
+  @media (min-width: $desktop-width) {
+    grid-area: unset;
+  }
 }
 
 .additional-products__link {
+  grid-area: btn;
+
   @media (min-width: $tablet-width) {
     padding: 10px 285px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 91px;
+    width: unset;
+    grid-area: unset;
   }
 }
 

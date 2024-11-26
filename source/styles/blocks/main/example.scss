@@ -1,21 +1,35 @@
 .example {
   background-color: $bg-basic_gray;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $bg-basic_gray 50%);
+    background-position: bottom;
+  }
 }
 
 .example__wrapper {
   padding-top: 25px;
-  width: 280px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    max-width: 708px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
-    display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 73px;
+    display: grid;
+    //grid-template-columns: 436px 650px;
+    //grid-template-rows: 60px 97px 72px 20px;
+    grid-template-areas:
+      "title slider"
+      "desc  slider"
+      "stat  slider"
+      "cost  slider";
+    column-gap: 224px;
   }
 }
 
@@ -39,6 +53,9 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 146px;
+    //grid-column: 1/2;
+    //grid-row: 1/2;
+    grid-area: title;
   }
 }
 
@@ -52,6 +69,18 @@
     line-height: 24px;
     width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    //grid-column: 1/2;
+    grid-area: desc;
+  }
+}
+
+.example__wrapper .statistics {
+  //grid-column: 1/2;
+  //grid-row: 3/4;
+  grid-area: stat;
 }
 
 .example__cost {
@@ -68,4 +97,16 @@
     width: 174px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    //grid-column: 1/2;
+    grid-area: cost;
+  }
+}
+
+
+.example__slider-wrapper {
+  //grid-column: 2/3;
+  //grid-row-start: 1;
+  grid-area: slider;
 }
