@@ -68,6 +68,9 @@
     grid-template-columns: 161px 131px 42px 244px;
     padding: 15px 0;
     width: 100%;
+    align-items: center;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -104,6 +107,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: unset;
+    margin-bottom: 0;
   }
 }
 
@@ -142,18 +146,35 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 58px 58px 43px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 707px;
+    padding: 71px 125px 69px;
+    min-height: 200px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 56px 42px 43px;
+    text-align: center;
+    height: fit-content;
   }
 }
 
 .additional-products__gift-decription {
   margin: 0;
+  width: 161px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 161px;
+    margin-left: auto;
+    //position: relative;
+  }
 }
 
 .additional-products__gift-decription::before {
@@ -164,5 +185,24 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-image: url("../../icons/stack.svg#gift-icon");
-  background-size: 30px 32px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+    margin: 0;
+    position: absolute;
+    left: 77px;
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 83px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    position: relative;
+    left: unset;
+    top: unset;
+  }
 }
