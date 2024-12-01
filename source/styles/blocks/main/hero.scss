@@ -12,6 +12,8 @@
   min-height: 302px;
   color: $additional-color-text;
   padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: 495px) {
     background-size: cover;
@@ -74,6 +76,12 @@
 }
 
 .hero__image {
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    height: unset;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 143px;
