@@ -9,6 +9,8 @@
 
   @media (min-width: $tablet-width) {
     width: fit-content;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -42,6 +44,7 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
+    width: 632px;
   }
 }
 
@@ -60,7 +63,7 @@
   text-transform: uppercase;
   width: 280px;
   margin-bottom: 16px;
-  padding: 13px;
+  padding: 10px;
 
   @media (min-width: $tablet-width) {
     width: 376px;
