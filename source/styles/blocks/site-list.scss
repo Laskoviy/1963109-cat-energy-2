@@ -34,7 +34,7 @@
   }
 }
 
-.site-list__item--current ::after{
+.site-list__item--current ::after {
   @media (min-width: $tablet-width) {
     position: absolute;
     box-sizing: border-box;

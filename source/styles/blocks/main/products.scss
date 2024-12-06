@@ -53,9 +53,9 @@
   border: 1px solid #ebebeb;
   display: grid;
   grid-template-areas:
-  "img title"
-  "img desc"
-  "btn btn";
+    "img title"
+    "img desc"
+    "btn btn";
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -90,9 +90,9 @@
   }
 }
 
-.products__item--more .products__text{
+.products__item--more .products__text {
   grid-row: 2/3;
-  grid-column: 1/-1
+  grid-column: 1/-1;
 }
 
 .products__item--more .products__title {
@@ -125,7 +125,6 @@
     font-size: 16px;
     line-height: 18px;
   }
-
 }
 
 .products__link-text {
@@ -152,7 +151,6 @@
 }
 
 .products__link-img {
-  text-align: center;
   align-self: center;
   grid-area: img;
   text-align: left;
@@ -169,7 +167,7 @@
   }
 }
 
-.products__image{
+.products__image {
   @media (min-width: $tablet-width) {
     height: 210px;
   }
