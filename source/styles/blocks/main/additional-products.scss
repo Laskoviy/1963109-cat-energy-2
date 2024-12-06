@@ -38,6 +38,10 @@
 .additional-products__list {
   margin-bottom: 35px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .additional-products__item {
@@ -51,6 +55,7 @@
     "title title"
     "desc  price"
     "btn   btn";
+    row-gap: 25px;
 
 
   @media (min-width: $tablet-width) {
@@ -87,6 +92,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,6 +109,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,6 +122,10 @@
   text-align: right;
   grid-area: price;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: unset;
