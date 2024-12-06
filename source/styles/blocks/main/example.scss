@@ -10,6 +10,7 @@
 .example__wrapper {
   padding-top: 25px;
   max-width: 280px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -74,15 +75,12 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    //grid-column: 1/2;
     grid-area: desc;
     margin-bottom: 69px;
   }
 }
 
 .example__wrapper .statistics {
-  //grid-column: 1/2;
-  //grid-row: 3/4;
   grid-area: stat;
 }
 
@@ -127,9 +125,13 @@
 
 .example__slider-wrapper {
   grid-area: slider;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     margin-top: 79px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

@@ -7,11 +7,11 @@
 }
 
 .main-footer__wrapper {
-  padding: 40px 0;
+  padding: 35px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
+  gap: 35px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
