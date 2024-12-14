@@ -111,7 +111,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__item::after{
+  .features__item::after {
     content: counter(list-item);
     counter-increment: list-item;
     position: absolute;
@@ -142,5 +142,3 @@
     line-height: 24px;
   }
 }
-
-
