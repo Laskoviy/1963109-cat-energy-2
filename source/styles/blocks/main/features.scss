@@ -23,16 +23,22 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+  counter-reset: list-item;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    //gap: 37px 153px;
     width: 633px;
     row-gap: 37px;
     justify-content: space-between;
@@ -46,10 +52,13 @@
 }
 
 .features__item {
+  position: relative;
+  width: 280px;
   display: flex;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    max-width: 250px;
     flex-direction: column;
     gap: 31px;
     min-width: 230px;
@@ -101,6 +110,26 @@
   background-size: 26px 31px;
 }
 
+@media (min-width: $tablet-width) {
+  .features__item::after{
+    content: counter(list-item);
+    counter-increment: list-item;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $bg-basic_gray;
+  }
+}
+
 .features__description {
   text-align: left;
   margin: 0;
@@ -114,34 +143,4 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .features__item--natural {
-    background-image: url("../../icons/stack.svg#natural-background");
-    background-size: 112px 280px;
-    width: 230px;
-  }
 
-  .features__item--powder {
-    background-image: url("../../icons/stack.svg#powder-background");
-    background-size: 134px 280px;
-    width: 246px;
-  }
-
-  .features__item--eating {
-    background-image: url("../../icons/stack.svg#eating-background");
-    background-size: 134px 280px;
-    width: 247px;
-  }
-
-  .features__item--change {
-    background-image: url("../../icons/stack.svg#scales-background");
-    background-size: 136px 280px;
-    width: 249px;
-  }
-
-  .features__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 32px;
-  }
-}

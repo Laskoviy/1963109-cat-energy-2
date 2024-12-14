@@ -4,7 +4,7 @@
 
 .hero__wrapper {
   text-align: center;
-  background: url("../../../images/hero-background-mobile@1x.jpg") 50% no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, $bg-basic_green 40%) 50% no-repeat;
+  background: url("../../../images/hero-background-mobile@1x.jpg") 50% no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, $bg-basic_green 35%) 50% no-repeat;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: contain;
@@ -36,8 +36,11 @@
 }
 
 .hero__text-wrapper {
+  margin-bottom: 29px;
+
   @media (min-width: $tablet-width) {
     padding-left: 100px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,11 +64,9 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin: 0;
     width: 283px;
     margin-bottom: 21px;
   }

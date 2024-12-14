@@ -51,12 +51,16 @@
 .site-list__link {
   color: #000000;
   text-decoration: none;
+}
 
+.site-list__link--white {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
 }
 
-.site-list--catalog .site-list__item .site-list__link {
-  color: #000000;
+.site-list--close {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

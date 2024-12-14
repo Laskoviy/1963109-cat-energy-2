@@ -1,20 +1,14 @@
 .additional-products__section-title {
-  font-family: $secondary-font;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 80px;
+    margin-left: 40px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
     grid-column: 1/-1;
     margin: 0;
   }
@@ -32,6 +26,7 @@
     grid-template-columns: 894px 245px;
     gap: 80px;
     padding-top: 71px;
+    padding-bottom: 96px;
   }
 }
 
@@ -41,6 +36,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -55,22 +54,25 @@
     "title title"
     "desc  price"
     "btn   btn";
-  row-gap: 25px;
-
 
   @media (min-width: $tablet-width) {
     padding: 26px 40px 28px;
     border: 1px solid rgb(205, 205, 205);
     justify-content: space-between;
     display: grid;
-    grid-template-areas:
-      "title desc price"
-      "btn   btn  btn";
+    //row-gap: 25px;
+    grid-template-areas: unset;
+    grid-template-columns: 1fr 1fr 93px;
+    grid-template-rows: 1fr 1fr;
+    // grid-template-areas:
+    //   "title desc price"
+    //   "btn   btn  btn";
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas: unset;
-    grid-template-columns: 161px 131px 42px 244px;
+    //grid-template-columns: 161px 131px 42px 244px;
+    grid-template-columns: 326px 1fr 0.5fr 244px;
+    grid-template-rows: unset;
     padding: 15px 0;
     width: 100%;
     align-items: center;
@@ -93,6 +95,8 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,11 +114,15 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: unset;
     margin-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -125,10 +133,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: unset;
+    margin-right: 40px;
   }
 }
 
@@ -138,6 +149,8 @@
   @media (min-width: $tablet-width) {
     padding: 10px 285px;
     width: 100%;
+    grid-column: 1/-1;
+    grid-row: 2/3;
   }
 
   @media (min-width: $desktop-width) {
