@@ -3,8 +3,6 @@
 }
 
 .compare-slider__item-wrapper {
-  //display: flex;
-  //max-width: 560px;
   overflow: hidden;
   width: 50%;
   position: relative;
@@ -23,6 +21,11 @@
   object-fit: unset;
 }
 
+.compare-slider__item--background {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(#ffffff 20% 29%, #f2f2f2 30%) bottom;
+  }
+}
 
 .compare-slider__button {
   cursor: pointer;
@@ -35,7 +38,10 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -2px;
+  //left: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .compare-slider__button::before {

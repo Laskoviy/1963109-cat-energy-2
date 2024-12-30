@@ -28,6 +28,11 @@
     border: 1px solid $bg-basic_green;
     content: "";
   }
+
+  @media (min-width: $desktop-width) {
+    left: -111px;
+    width: 70px;
+  }
 }
 
 .section-title::after {
@@ -40,5 +45,10 @@
     height: 0;
     border: 1px solid $bg-basic_green;
     content: "";
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -110px;
+    width: 1053px;
   }
 }

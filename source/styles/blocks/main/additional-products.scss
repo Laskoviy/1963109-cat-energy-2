@@ -56,21 +56,18 @@
     "btn   btn";
 
   @media (min-width: $tablet-width) {
+    min-height: 139.5px;
     padding: 26px 40px 28px;
     border: 1px solid rgb(205, 205, 205);
     justify-content: space-between;
     display: grid;
-    //row-gap: 25px;
     grid-template-areas: unset;
     grid-template-columns: 1fr 1fr 93px;
     grid-template-rows: 1fr 1fr;
-    // grid-template-areas:
-    //   "title desc price"
-    //   "btn   btn  btn";
   }
 
   @media (min-width: $desktop-width) {
-    //grid-template-columns: 161px 131px 42px 244px;
+    min-height: 71.5px;
     grid-template-columns: 326px 1fr 0.5fr 244px;
     grid-template-rows: unset;
     padding: 15px 0;

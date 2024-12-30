@@ -4,6 +4,7 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    width: unset;
     padding-top: 0;
     padding-bottom: 45px;
   }
@@ -15,14 +16,14 @@
 }
 
 .programm-variations__list {
-  width: 280px;
+  //width: 280px;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
-    width: 708px;
+    min-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,11 +35,14 @@
 
 .programm-variations__item {
   background-color: $bg-basic_gray;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 20px 20px;
   position: relative;
+  min-height: 266px;
+
 
   @media (min-width: $tablet-width) {
     padding: 77px 63px 53px 53px;
+    min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +58,7 @@
   top: 21px;
 
   @media (min-width: $tablet-width) {
-    left: 450px;
+    right: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +82,7 @@
     width: 100px;
     height: 106px;
     top: 41px;
+    left: 52px;
   }
 }
 
@@ -86,12 +91,14 @@
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-gain-icon");
   left: 13px;
+  top: 25px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    left: 410px;
-    top: 90px;
+    left: unset;
+    right: 29px;
+    top: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,34 +136,23 @@
 .programm-variations__description {
   text-align: left;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 16px;
+  padding-bottom: 23px;
   position: relative;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     width: 340px;
     margin-bottom: 54px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 457px;
     margin-bottom: 27px;
-  }
-}
-
-.programm-variations__description::after {
-  position: absolute;
-  bottom: -22px;
-  width: 230px;
-  height: 1px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #d9d9d9;
-  content: "";
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 

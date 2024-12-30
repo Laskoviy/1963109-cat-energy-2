@@ -33,16 +33,16 @@
   display: flex;
   flex-flow: column wrap;
   width: fit-content;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     flex-direction: row;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    gap: 68px 80px;
+    gap: 61px 80px;
   }
 }
 
@@ -58,6 +58,7 @@
     "btn btn";
 
   @media (min-width: $tablet-width) {
+    min-height: 511px;
     width: 324px;
     background: linear-gradient(to bottom, #ffffff 16%, $bg-basic_gray 16%, $bg-basic_gray 84%);
     border: none;
