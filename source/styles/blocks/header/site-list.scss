@@ -35,7 +35,7 @@
 }
 
 .site-list__link {
-  color: #000000;
+  color: $desktop-color-text;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $bg-basic_white;
   }
 }
 
@@ -59,7 +59,7 @@
 
 .site-list__link--white {
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    color: $additional-color-text;
   }
 }
 

@@ -47,8 +47,8 @@
   line-height: 14px;
   padding-top: 13px;
   padding-bottom: 18px;
-  border-top: 1px solid rgb(205, 205, 205);
-  border-bottom: 1px solid rgb(205, 205, 205);
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
   display: grid;
   grid-template-areas:
     "title title"
@@ -58,7 +58,7 @@
   @media (min-width: $tablet-width) {
     min-height: 139.5px;
     padding: 26px 40px 28px;
-    border: 1px solid rgb(205, 205, 205);
+    border: 1px solid #cdcdcd;
     justify-content: space-between;
     display: grid;
     grid-template-areas: unset;

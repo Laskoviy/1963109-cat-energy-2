@@ -15,7 +15,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: #000000;
+  color: $desktop-color-text;
   text-align: left;
   margin: 0;
   margin-bottom: 41px;
@@ -60,7 +60,7 @@
   @media (min-width: $tablet-width) {
     min-height: 511px;
     width: 324px;
-    background: linear-gradient(to bottom, #ffffff 16%, $bg-basic_gray 16%, $bg-basic_gray 84%);
+    background: linear-gradient(to bottom, $bg-basic_white 16%, $bg-basic_gray 16%, $bg-basic_gray 84%);
     border: none;
     padding: 10px 37px 40px;
     display: flex;
@@ -83,7 +83,7 @@
   padding-top: 78px;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    background-color: $bg-basic_white;
     background-position: bottom 319px center;
     padding-top: 242px;
   }

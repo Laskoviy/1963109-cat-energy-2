@@ -1,30 +1,26 @@
 .compare-slider {
   position: relative;
-}
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
 
-.compare-slider__item-wrapper {
-  overflow: hidden;
-  width: 50%;
-  position: relative;
-  z-index: 2;
-}
-
-.compare-slider__item-wrapper--after {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .compare-slider__item {
-  max-width: unset;
-  object-fit: unset;
+  object-fit: cover;
 }
 
-.compare-slider__item--background {
-  @media (min-width: $tablet-width) {
-    background: linear-gradient(#ffffff 20% 29%, #f2f2f2 30%) bottom;
-  }
+.compare-slider__item--fat {
+  object-position: left;
+}
+
+.compare-slider__item--fit {
+  object-position: right;
 }
 
 .compare-slider__button {
@@ -38,7 +34,6 @@
   display: block;
   position: absolute;
   top: 0;
-  //left: -2px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -46,7 +41,7 @@
 
 .compare-slider__button::before {
   content: "";
-  background-color: #ffffff;
+  background-color: $bg-basic_white;
   border: 2px solid #666666;
   border-radius: 50%;
   width: 40px;

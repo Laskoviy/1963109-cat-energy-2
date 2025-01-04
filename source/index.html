@@ -19,9 +19,9 @@
       <a class="main-header__logo logo" href="#">
 
         <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop-icon.svg">
-          <source width="60" height="59" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet-icon.svg">
-          <img class="logo__image" src="images/logo-mobile-icon.svg" width="33" height="38" alt="логотип Cat Energy">
+          <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop-icon.svg">
+          <source type="image/svg+xml" width="60" height="59" media="(min-width: 768px)" srcset="images/logo-tablet-icon.svg">
+          <img class="logo__image" width="33" height="38" src="images/logo-mobile-icon.svg" alt="логотип Cat Energy">
         </picture>
 
         <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Товарный знак Cat Energy">
@@ -48,11 +48,6 @@
         <h1 class="hero__title main-title">Функциональное
           питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <!-- <picture>
-          <source width="552" height="499" type="image/jpeg" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/jpg" media="(min-width: 768px)" srcset="images/hero-tablet@1x.jpg 1x, images/hero-tablet@2x.jpg 2x">
-          <img class="hero__image" src="images/hero-desktop@1x.png" srcset="images/hero-desktop@2x.png 2x" width="280" height="270" alt="Кошачий корм со вкусом курицы">
-        </picture> -->
         <a class="hero__choose-pr button button--primary" href="#">подобрать программу</a>
       </div>
     </section>
@@ -116,23 +111,25 @@
           <p class="example__cost"><span class="example__cost-desc">Затраты на питание:</span><span class="example__cost-number">15 000 РУБ.</span></p>
           <div class="example__slider-wrapper">
             <div class="compare-slider">
-              <div class="compare-slider__item-wrapper">
-                <picture>
-                  <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x">
-                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x">
-                  <img class="compare-slider__item compare-slider__item--background" src="images/slide-before-mobile@1x.jpg" srcset="images/slide-before-mobile@2x.png 2x" width="280" height="256" alt="до">
-                </picture>
-              </div>
-              <div class="compare-slider__item-wrapper compare-slider__item-wrapper--after">
-                <picture>
-                  <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x">
-                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x">
-                  <img class="compare-slider__item" src="images/slide-after-mobile@1x.png" srcset="images/slide-after-mobile@2x.png 2x" width="280" height="256" alt="после">
-                </picture>
-              </div>
+              <picture>
+                <source type="image/webp" width="560" height="512" media="(min-width: 1440px)" srcset="images/slide-before-tablet@1x.webp 1x, images/slide-before-tablet@2x.webp 2x">
+                <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/slide-before-tablet@1x.webp 1x, images/slide-before-tablet@2x.webp 2x">
+                <source type="image/webp" width="280" height="256" srcset="images/slide-before-mobile@1x.webp 1x, images/slide-before-mobile@2x.webp 2x">
+                <source type="image/png" width="560" height="512" media="(min-width: 1440px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x">
+                <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x">
+                <img class="compare-slider__item compare-slider__item--fat compare-slider__item--background" src="images/slide-before-mobile@1x.jpg" srcset="images/slide-before-mobile@2x.png 2x" width="280" height="256" alt="до">
+              </picture>
               <button class="compare-slider__button" type="button">
                 <span class="visually-hidden">кнопка ползунок</span>
               </button>
+              <picture>
+                <source type="image/webp" width="560" height="512" media="(min-width: 1440px)" srcset="images/slide-after-tablet@1x.webp 1x, images/slide-after-tablet@2x.webp 2x">
+                <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/slide-after-tablet@1x.webp 1x, images/slide-after-tablet@2x.webp 2x">
+                <source type="image/webp" width="280" height="256" srcset="images/slide-after-mobile@1x.webp 1x, images/slide-after-mobile@2x.webp 2x">
+                <source type="image/png" width="560" height="512" media="(min-width: 1440px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x">
+                <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x">
+                <img class="compare-slider__item compare-slider__item--fit" src="images/slide-after-mobile@1x.png" srcset="images/slide-after-mobile@2x.png 2x" width="280" height="256" alt="после">
+              </picture>
             </div>
           </div>
         </div>
@@ -150,8 +147,11 @@
       <div class="map">
         <h2 class="visually-hidden">Карта</h2>
         <picture>
-          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <source type="image/webp" width="1440" height="400" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+          <source type="image/webp" width="768" height="400" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="362" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+          <source type="image/jpeg" width="1440" height="400" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source type="image/jpeg" width="768" height="400" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
           <img class="map__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="карта">
         </picture>
       </div>
