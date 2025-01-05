@@ -23,6 +23,9 @@
 
   @media (min-width: $desktop-width) {
     top: 131px;
+    transform: unset;
+    left: unset;
+    right: 419px;
   }
 }
 
