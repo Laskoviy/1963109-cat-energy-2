@@ -57,24 +57,26 @@
 .hero__wrapper::after {
   position: absolute;
   content: "";
-  background-image: url("../../../images/hero-desktop@1x.png");
+  background-image: url("../../../images/hero-mobile@1x.png");
   left: 50%;
   transform: translateX(-50%);
   bottom: 43px;
-  background-size: 300px 270px;
+  background-size: 280px 270px;
   background-repeat: no-repeat;
-  width: 320px;
+  object-fit: contain;
+  width: 280px;
   height: 270px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../../images/hero-desktop@2x.png");
+    background-image: url("../../../images/hero-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     bottom: 0;
-    background-size: 669px 606px;
-    width: 621px;
-    height: 613px;
+    background-size: 709px 609px;
+    background-image: url("../../../images/hero-tablet@1x.jpg");
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,6 +85,7 @@
     bottom: 52px;
     right: 331px;
     background-size: 552px 499px;
+    background-image: url("../../../images/hero-desktop@1x.png");
     width: 552px;
     height: 499px;
   }
