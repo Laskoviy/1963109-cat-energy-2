@@ -11,7 +11,7 @@
 
 <body class="page__body">
   <header class="main-header main-header--catalog">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--close">
       <a class="main-header__logo logo" href="index.html">
         <picture>
           <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop-icon.svg">
@@ -20,7 +20,7 @@
         </picture>
         <img class="logo__text" width="101" height="18" src="images/logo-text.svg" alt="Товарный знак Cat Energy">
       </a>
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list site-list--catalog site-list--close">
@@ -232,7 +232,9 @@
     </section>
     <section class="additional-products container">
       <div class="additional-products__wrapper">
-        <h2 class="additional-products__section-title section-title">Дополнительные товары</h2>
+        <div class="additional-products__section-title-wrapper">
+          <h2 class="additional-products__section-title section-title">Дополнительные товары</h2>
+        </div>
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <h3 class="additional-products__title">Сахарозаменитель</h3>
@@ -261,13 +263,16 @@
         </ul>
         <div class="additional-products__gift">
           <h3 class="visually-hidden">Специальное предложение</h3>
-          <p class="additional-products__gift-decription">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional-products__gift-decription">Закажите все
+            и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
     <section class="subscription container">
       <div class="subscription__wrapper">
-        <h2 class="subscription__title section-title">Акции и новинки</h2>
+        <div class="additional-products__section-title-wrapper">
+          <h2 class="subscription__title section-title">Акции и новинки</h2>
+        </div>
         <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>

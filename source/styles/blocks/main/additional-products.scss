@@ -1,6 +1,13 @@
+.additional-products__section-title-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
 .additional-products__section-title {
   margin: 0;
-  margin-bottom: 36px;
+  padding-right: 40px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -49,6 +56,7 @@
   padding-bottom: 18px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
+  min-height: 130px;
   display: grid;
   grid-template-areas:
     "title title"
@@ -85,7 +93,7 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   grid-area: title;
 
   @media (min-width: $tablet-width) {
@@ -194,6 +202,7 @@
   width: 161px;
   font-size: 16px;
   line-height: 20px;
+  white-space: pre-line;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
