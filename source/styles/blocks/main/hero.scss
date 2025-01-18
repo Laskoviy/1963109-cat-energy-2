@@ -152,3 +152,12 @@
     left: unset;
   }
 }
+
+
+.hero__choose-pr:hover {
+  background-color: #5eaa2f;
+}
+
+.hero__choose-pr :active {
+  opacity: 0.33;
+}

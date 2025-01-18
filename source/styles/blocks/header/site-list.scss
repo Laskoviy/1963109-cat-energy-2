@@ -63,3 +63,7 @@
     color: $additional-color-text;
   }
 }
+
+.site-list__item :hover {
+  opacity: 0.33;
+}

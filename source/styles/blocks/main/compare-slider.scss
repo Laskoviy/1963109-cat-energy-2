@@ -66,3 +66,16 @@
   mask-size: 24px 18px;
   mask-repeat: no-repeat;
 }
+
+.compare-slider__button :hover {
+  background-color: #68b738;
+}
+
+.compare-slider__button :active {
+  background-color: #5eaa2f;
+}
+
+
+// .compare-slider__button::after :hover {
+//   background-color: #68b738;
+// }

@@ -72,7 +72,6 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    //height: fit-content;
   }
 }
 
@@ -267,6 +266,10 @@
   }
 }
 
+.products__button :hover {
+  background-color: #5eaa2f;
+}
+
 .products__button.button--secondary {
   display: block;
   padding: 10px 79px;
@@ -275,3 +278,8 @@
     padding: 10px 39px;
   }
 }
+
+
+// .products__button.button--primary :active {
+//   opacity: 0.4;
+// }
