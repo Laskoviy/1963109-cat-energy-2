@@ -1,4 +1,4 @@
-.additional-products__section-title-wrapper {
+.section-title-wrapper {
   position: relative;
 }
 
@@ -24,7 +24,7 @@
   }
 }
 
-.additional-products__section-title-wrapper::after {
+.section-title-wrapper::after {
   position: absolute;
   box-sizing: border-box;
   height: 0;
