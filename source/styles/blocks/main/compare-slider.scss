@@ -67,15 +67,26 @@
   mask-repeat: no-repeat;
 }
 
-.compare-slider__button :hover {
+.compare-slider__button:hover {
   background-color: #68b738;
+
+  .compare-slider__button::before {
+    border: 2px solid #68b738;
+  }
+
+  .compare-slider__button::after {
+    background-color: #68b738;
+  }
 }
 
 .compare-slider__button :active {
   background-color: #5eaa2f;
 }
 
+// .compare-slider__button::before:hover {
+//   border: 2px solid #68b738;
+// }
 
-// .compare-slider__button::after :hover {
+// .compare-slider__button::after:hover {
 //   background-color: #68b738;
 // }
