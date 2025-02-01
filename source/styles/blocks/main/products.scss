@@ -79,19 +79,18 @@
   background-image: url("../../icons/stack.svg#plus");
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  background-position: bottom 153px center;
+  background-position: top 25px center;
   padding-top: 73px;
   min-height: 207px;
 
   @media (min-width: $tablet-width) {
     background-color: $bg-basic_white;
     background-size: 60px 60px;
-    background-position: bottom 319px center;
+    background-position: top 132px center;
     padding-top: 242px;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: bottom 319px center;
     padding-top: 230px;
   }
 }

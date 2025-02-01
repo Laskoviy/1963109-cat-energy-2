@@ -58,6 +58,7 @@
   border-bottom: 1px solid #cdcdcd;
   min-height: 130px;
   display: grid;
+  column-gap: 1px;
   grid-template-areas:
     "title title"
     "desc  price"
@@ -72,6 +73,7 @@
     grid-template-areas: unset;
     grid-template-columns: 1fr 1fr 93px;
     grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
   }
 
   @media (min-width: $desktop-width) {
