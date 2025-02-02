@@ -12,11 +12,14 @@
   background-color: rgb(255, 255, 255);
   z-index: 1;
   position: relative;
+  padding: 0 40px;
+  left: -40px;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    padding-right: 40px;
+    padding: 0 40px;
+    left: -40px;
   }
 
   @media (min-width: $desktop-width) {

@@ -6,18 +6,20 @@
 
 .additional-products__section-title {
   margin: 0;
-  padding-right: 40px;
   margin-bottom: 33px;
+  width: 306px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     margin-left: 40px;
     position: relative;
+    width: 382px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     margin: 0;
+    width: 456px;
   }
 }
 
